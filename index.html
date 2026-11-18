@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Royal Dashboard</h1>
+      <input type="text" placeholder="Cari Kelas, Dokumen, Aktifitas dll...">
+    </header>
+
+    <!-- NAV (menu bisa diklik) -->
+    <nav>
+      <a href="#" class="active" data-page="home">Home</a>
+      <a href="#" data-page="mahasiswa">Mahasiswa</a>
+      <a href="#" data-page="kelas">Kelas</a>
+      <a href="#" data-page="aktifitas">Aktifitas</a>
+      <a href="#" data-page="statistik">Statistik</a>
+      <a href="#" data-page="dokumen">Dokumen</a>
+      <a href="#" class="settings" data-page="settings">Settings</a>
+      <a href="#" class="signout" data-judul="Sign Out" data-isi="Apakah kamu yakin ingin keluar dari Royal Dashboard?">Sign Out</a>
+    </nav>
+
+    <!-- ================= HALAMAN HOME ================= -->
+    <div class="halaman aktif" id="home">
+
+      <!-- MAIN -->
+      <main>
+        <div class="welcome-text">
+          <h2>Selamat Datang, DivaSinambela<br>Kelas SI-3D</h2>
+          <p>Kamu memiliki Statistik, 3 Progres Kelas, 4 Aktifitas Selanjutnya dan 3 Lampiran Dokumen yang ada pada aplikasi ini.</p>
+        </div>
+        <div class="welcome-foto klik" data-judul="Profil" data-isi="DivaSinambela | NIM 25220347 | Kelas SI-3D | Program Studi Sistem Informasi">
+          <img src="diva.jpeg" alt="foto Divasinambela">
+        </div>
+      </main>
+
+      <!-- ASIDE : Statistik Mahasiswa -->
+      <aside>
+        <h3>Statistik Mahasiswa</h3>
+        <div class="chart klik" data-judul="Statistik Mahasiswa" data-isi="Grafik jumlah poin mahasiswa per kelas (Class A sampai Class E). Garis hijau menunjukkan Avg Point.">
+          <img src="/Chart_Statistik.svg" alt="Chart Statistik Mahasiswa">
+        </div>
+      </aside>
+
+      <!-- SECTION 1 : Progres Kelas -->
+      <section class="section1">
+        <h3>Progres Kelas</h3>
+        <div class="item klik" data-judul="Matakuliah A" data-isi="Jumlah pendaftar: 78 mahasiswa.">
+          <strong>Matakuliah A</strong>
+          <span>78 Pendaftar</span>
+        </div>
+        <div class="item klik" data-judul="Matakuliah B" data-isi="Jumlah pendaftar: 30 mahasiswa.">
+          <strong>Matakuliah B</strong>
+          <span>30 Pendaftar</span>
+        </div>
+        <div class="item klik" data-judul="Matakuliah C" data-isi="Jumlah pendaftar: 40 mahasiswa.">
+          <strong>Matakuliah C</strong>
+          <span>40 Pendaftar</span>
+        </div>
+        <div class="item klik" data-judul="Matakuliah D" data-isi="Jumlah pendaftar: 10 mahasiswa.">
+          <strong>Matakuliah D</strong>
+          <span>10 Pendaftar</span>
+        </div>
+      </section>
+
+      <!-- SECTION 2 : Aktifitas Selanjutnya -->
+      <section class="section2">
+        <h3>Aktifitas Selanjutnya</h3>
+        <div class="item klik" data-judul="Perkuliahan Daring 1" data-isi="Jadwal: Senin, 15 Januari 2025.">
+          <strong>Perkuliahan Daring 1</strong>
+          <span>Senin, 15 Januari 2025</span>
+        </div>
+        <div class="item klik" data-judul="Perkuliahan Daring 1" data-isi="Jadwal: Selasa, 15 Februari 2025.">
+          <strong>Perkuliahan Daring 1</strong>
+          <span>Selasa, 15 Februari 2025</span>
+        </div>
+        <div class="item klik" data-judul="Perkuliahan Daring 1" data-isi="Jadwal: Rabu, 15 Maret 2025.">
+          <strong>Perkuliahan Daring 1</strong>
+          <span>Rabu, 15 Maret 2025</span>
+        </div>
+        <div class="item klik" data-judul="Perkuliahan Daring 1" data-isi="Jadwal: Kamis, 15 April 2025.">
+          <strong>Perkuliahan Daring 1</strong>
+          <span>Kamis, 15 April 2025</span>
+        </div>
+      </section>
+
+      <!-- FOOTER : Lampiran -->
+      <footer>
+        <h3>Lampiran</h3>
+        <div class="lampiran">
+          <p><strong>Lampiran Dokumen 1 -</strong> Matakuliah A | Tugas Bersama Perkuliahan Daring <span class="pipe">|</span> <a href="#" data-judul="Lampiran Dokumen 1" data-isi="Matakuliah A | Tugas Bersama Perkuliahan Daring">Lihat Dokumen</a></p>
+        </div>
+        <div class="lampiran">
+          <p><strong>Lampiran Dokumen 2 -</strong> Matakuliah B | Tugas Bersama Perkuliahan Daring <span class="pipe">|</span> <a href="#" data-judul="Lampiran Dokumen 2" data-isi="Matakuliah B | Tugas Bersama Perkuliahan Daring">Lihat Dokumen</a></p>
+        </div>
+        <div class="lampiran">
+          <p><strong>Lampiran Dokumen 3 -</strong> Matakuliah C | Tugas Bersama Perkuliahan Daring <span class="pipe">|</span> <a href="#" data-judul="Lampiran Dokumen 3" data-isi="Matakuliah C | Tugas Bersama Perkuliahan Daring">Lihat Dokumen</a></p>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ================= HALAMAN MAHASISWA ================= -->
+    <div class="halaman" id="mahasiswa">
+      <h2>Mahasiswa</h2>
+      <div class="item"><strong>Nama</strong><span>Divasinambela</span></div>
+      <div class="item"><strong>NIM</strong><span>25220347</span></div>
+      <div class="item"><strong>Kelas</strong><span>SI-3D</span></div>
+      <div class="item"><strong>Program Studi</strong><span>Sistem Informasi</span></div>
+      <div class="item"><strong>Fakultas</strong><span>Ilmu Komputer, Universitas Royal</span></div>
+    </div>
+
+    <!-- ================= HALAMAN KELAS ================= -->
+    <div class="halaman" id="kelas">
+      <h2>Kelas</h2>
+      <div class="item klik" data-judul="Matakuliah A" data-isi="Jumlah pendaftar: 78 mahasiswa."><strong>Matakuliah A</strong><span>78 Pendaftar</span></div>
+      <div class="item klik" data-judul="Matakuliah B" data-isi="Jumlah pendaftar: 30 mahasiswa."><strong>Matakuliah B</strong><span>30 Pendaftar</span></div>
+      <div class="item klik" data-judul="Matakuliah C" data-isi="Jumlah pendaftar: 40 mahasiswa."><strong>Matakuliah C</strong><span>40 Pendaftar</span></div>
+      <div class="item klik" data-judul="Matakuliah D" data-isi="Jumlah pendaftar: 10 mahasiswa."><strong>Matakuliah D</strong><span>10 Pendaftar</span></div>
+    </div>
+
+    <!-- ================= HALAMAN AKTIFITAS ================= -->
+    <div class="halaman" id="aktifitas">
+      <h2>Aktifitas</h2>
+      <div class="item klik" data-judul="Perkuliahan Daring 1" data-isi="Jadwal: Senin, 15 Januari 2025."><strong>Perkuliahan Daring 1</strong><span>Senin, 15 Januari 2025</span></div>
+      <div class="item klik" data-judul="Perkuliahan Daring 1" data-isi="Jadwal: Selasa, 15 Februari 2025."><strong>Perkuliahan Daring 1</strong><span>Selasa, 15 Februari 2025</span></div>
+      <div class="item klik" data-judul="Perkuliahan Daring 1" data-isi="Jadwal: Rabu, 15 Maret 2025."><strong>Perkuliahan Daring 1</strong><span>Rabu, 15 Maret 2025</span></div>
+      <div class="item klik" data-judul="Perkuliahan Daring 1" data-isi="Jadwal: Kamis, 15 April 2025."><strong>Perkuliahan Daring 1</strong><span>Kamis, 15 April 2025</span></div>
+    </div>
+
+    <!-- ================= HALAMAN STATISTIK ================= -->
+    <div class="halaman" id="statistik">
+      <h2>Statistik</h2>
+      <div class="chart">
+        <img src="./Chart_Statistik.svg" alt="Chart Statistik Mahasiswa">
+      </div>
+    </div>
+
+    <!-- ================= HALAMAN DOKUMEN ================= -->
+    <div class="halaman" id="dokumen">
+      <h2>Dokumen</h2>
+      <div class="lampiran"><p><strong>Lampiran Dokumen 1 -</strong> Matakuliah A | Tugas Bersama Perkuliahan Daring <span class="pipe">|</span> <a href="#" data-judul="Lampiran Dokumen 1" data-isi="Matakuliah A | Tugas Bersama Perkuliahan Daring">Lihat Dokumen</a></p></div>
+      <div class="lampiran"><p><strong>Lampiran Dokumen 2 -</strong> Matakuliah B | Tugas Bersama Perkuliahan Daring <span class="pipe">|</span> <a href="#" data-judul="Lampiran Dokumen 2" data-isi="Matakuliah B | Tugas Bersama Perkuliahan Daring">Lihat Dokumen</a></p></div>
+      <div class="lampiran"><p><strong>Lampiran Dokumen 3 -</strong> Matakuliah C | Tugas Bersama Perkuliahan Daring <span class="pipe">|</span> <a href="#" data-judul="Lampiran Dokumen 3" data-isi="Matakuliah C | Tugas Bersama Perkuliahan Daring">Lihat Dokumen</a></p></div>
+    </div>
+
+    <!-- ================= HALAMAN SETTINGS ================= -->
+    <div class="halaman" id="settings">
+      <h2>Settings</h2>
+      <label class="item"><span><input type="checkbox" checked> Notifikasi aktifitas</span></label>
+      <label class="item"><span><input type="checkbox" checked> Pengingat tugas</span></label>
+      <label class="item"><span><input type="checkbox"> Tampilkan statistik di Home</span></label>
+    </div>
+
+  </div>
+
+  <!-- ================= POPUP (muncul saat diklik) ================= -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <h3 id="modal-judul"></h3>
+      <p id="modal-isi"></p>
+      <button type="button" id="modal-tutup">Tutup</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
